@@ -52,7 +52,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
 public enum Transition
 {
     NullTransition = 0, // Use this transition to represent a non-existing transition in your system
-    StartButtonClick
+    StartButtonClick,
+    PauseButtonClick
 }
 
 /// <summary>

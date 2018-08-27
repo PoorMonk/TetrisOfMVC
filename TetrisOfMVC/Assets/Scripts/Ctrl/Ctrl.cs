@@ -7,6 +7,8 @@ public class Ctrl : MonoBehaviour {
     [HideInInspector] public Model m_model;
     [HideInInspector] public View m_view;
     [HideInInspector] public CameraControl m_cameraControl;
+    [HideInInspector] public GameManager m_gameManager;
+    [HideInInspector] public AudioManager m_audioManager;
 
     private FSMSystem m_fsm;
 
@@ -15,6 +17,8 @@ public class Ctrl : MonoBehaviour {
         m_model = GameObject.FindGameObjectWithTag("Model").GetComponent<Model>();
         m_view = GameObject.FindGameObjectWithTag("View").GetComponent<View>();
         m_cameraControl = GetComponent<CameraControl>();
+        m_audioManager = GetComponent<AudioManager>();
+        m_gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     void Start()

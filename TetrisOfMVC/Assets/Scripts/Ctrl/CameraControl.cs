@@ -14,7 +14,7 @@ public class CameraControl : MonoBehaviour {
 
     public void ZoomIn()
     {
-        
+        m_camera.DOOrthoSize(13.5f, 0.5f);
     }
 
     public void ZoomOut()
